@@ -22,6 +22,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.30",
         "tailwindcss": "^1.6.2"
     }
 }

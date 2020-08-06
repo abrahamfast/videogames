@@ -54,7 +54,119 @@
 					<span class="ml-2">Play Trailer</span>
 				</button>
 				</div>
+			</div> 
+		</div>
+		<div class="images conainer border-b border-gray-800 pb-12 mt-8">
+			<h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
+			<div class="grid grid-cols-3 gap-12 mt-8">
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				</div>
 			</div>
 		</div>
+
+		<div class="similar-games mt-8 mb-8">
+			<h2 class="text-blue-500 uppercase tracking-wide font-semibold">Similar Games</h2>
+			<div class="similar-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-6 gap-12 gap-12">
+			<div class="game mt-8">
+				<div class="relative inline-block">
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full progress-list-item">
+					<div class="font-semibold text-xs flex justify-center items-center h-full">
+						80% 
+					</div>
+				</div>
+			</div>
+				<a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy & remak</a>
+				<div class="text-gray-400 mt-1">Playstation4</div>
+			</div>
+			<div class="game mt-8">
+				<div class="relative inline-block">
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full progress-list-item">
+					<div class="font-semibold text-xs flex justify-center items-center h-full">
+						80% 
+					</div>
+				</div>
+			</div>
+				<a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy & remak</a>
+				<div class="text-gray-400 mt-1">Playstation4</div>
+			</div>
+			<div class="game mt-8">
+				<div class="relative inline-block">
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full progress-list-item">
+					<div class="font-semibold text-xs flex justify-center items-center h-full">
+						80% 
+					</div>
+				</div>
+			</div>
+				<a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy & remak</a>
+				<div class="text-gray-400 mt-1">Playstation4</div>
+			</div>
+			<div class="game mt-8">
+				<div class="relative inline-block">
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full progress-list-item">
+					<div class="font-semibold text-xs flex justify-center items-center h-full">
+						80% 
+					</div>
+				</div>
+			</div>
+				<a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy & remak</a>
+				<div class="text-gray-400 mt-1">Playstation4</div>
+			</div>
+			<div class="game mt-8">
+				<div class="relative inline-block">
+					<a href="#">
+						<img src="/img/gg1.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+					</a>
+				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full progress-list-item">
+					<div class="font-semibold text-xs flex justify-center items-center h-full">
+						80% 
+					</div>
+				</div>
+			</div>
+				<a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy & remak</a>
+				<div class="text-gray-400 mt-1">Playstation4</div>
+			</div>
+		</div>
+		</div>
+
 	</div>
 @endsection

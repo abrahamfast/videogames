@@ -2,12 +2,12 @@
 
 @section('content')
 	<div class="container mx-auto px-4">
-		<div class="game-details border-b border-gray-800 pb-12 flex">
+		<div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
 			<div class="flex-none">
 				<img src="/img/gg1.jpg" alt="cover" class="">
 			</div>
-			<div class="ml-12 mr-64">
-				<h2 class="font-semibold text-4xl">
+			<div class="lg:ml-12 lg:mr-64">
+				<h2 class="font-semibold text-4xl leading-tight mt-1">
 					Final Fantesy
 				</h2>
 				<div class="text-gray-400">
@@ -30,7 +30,7 @@
 						</div>
 						<div class="ml-4 text-xs">Critic <br> Score</div>
 					</div>
-					<div class="flex items-center space-x-4 ml-12">
+					<div class="flex items-center space-x-4 mt-4 lg:ml-12 lg:mt-0">
 						<div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center">
 							<a href="" class="hove:text-gray-400"><i class="fas fa-question-circle"></i></a>
 						</div>
@@ -56,9 +56,9 @@
 				</div>
 			</div> 
 		</div>
-		<div class="images conainer border-b border-gray-800 pb-12 mt-8">
+		<div class="images-conainer border-b border-gray-800 pb-12 mt-8">
 			<h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
-			<div class="grid grid-cols-3 gap-12 mt-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-12 mt-8">
 				<div>
 					<a href="#">
 						<img src="/img/gg1.jpg" alt="screenshot" class="hover:opacity-75 transition ease-in-out duration-150">

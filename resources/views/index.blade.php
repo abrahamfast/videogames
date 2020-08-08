@@ -12,7 +12,7 @@
 
 			<div class="most-anticipated lg:w-1/4">
 				<h2 class="text-blue-500 uppercase tracking-wide font-semibold">Most Anticipated</h2>
-				{{-- <livewire:most-anticipated>  --}}
+				<livewire:most-anticipated> 
 				<h2 class="text-blue-500 uppercase tracking-wide font-semibold mt-12">Comming Soon</h2>
 				<livewire:comming-soon> 
 			</div> <!-- end comming soon -->

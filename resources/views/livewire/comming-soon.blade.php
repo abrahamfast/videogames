@@ -1,6 +1,6 @@
 				
 				<div wire:init="loadCommingSoon" class="most-anticipated-container space-y-10 mt-8">
-					@foreach($commingSoon as $game)
+					@forelse($commingSoon as $game)
 					<div class="game flex">
 						<a href="#">
 							@isset($game['cover'])
@@ -20,5 +20,7 @@
 							<div class="text-gray-400 text-sm 1">{{ Carbon\Carbon::parse($game['first_release_date'])->format("M d, y") }}</div>
 						</div>
 					</div>
-					@endforeach
+					@empty
+						<div>Loading...</div>
+					@endforelse
 				</div>

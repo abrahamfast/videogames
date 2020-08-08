@@ -6,6 +6,7 @@
 	<title>Video Games</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
+	@livewireStyles
 </head>
 <body class="bg-gray-900 text-white">
 	<header class="border-b border-gray-800">
@@ -47,5 +48,6 @@
 		</footer>
 	</main>
 	
+@livewireScripts
 </body>
 </html>

@@ -1,6 +1,11 @@
 module.exports = {
   purge: [],
-  theme: { // defaults to these values
+  theme: { 
+    extend: {
+      spacing:{
+        '44': "11rem",
+      }
+    },
     spinner: (theme) => ({
       default: {
         color: '#dae1e7', // color you want to make the spinner

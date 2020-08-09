@@ -24,7 +24,7 @@ class GamePopular extends Component
 	                & ( first_release_date >= {$before}
 	                & first_release_date < {$after});
 	                sort popularity desc;
-	                limit 10;
+	                limit 12;
 	            "
         	])->get($endpoint)->json();
         });

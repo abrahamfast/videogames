@@ -1,5 +1,5 @@
-{
-
+module.exports = {
+  purge: [],
   theme: { // defaults to these values
     spinner: (theme) => ({
       default: {
@@ -10,13 +10,8 @@
       }
     }),
   },
-
-  variants: { // all the following default to ['responsive']
-    spinner: ['responsive']
-  },
-
+  variants: {},
   plugins: [
-    // optional configuration for resulting class name and/or tailwind theme key
-    require('tailwindcss-spinner')({ className: 'spinner', themeKey: 'spinner' }),
+    require('tailwindcss-spinner')(),
   ],
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Http;
 
 class GameController extends Controller
 {
@@ -40,12 +41,24 @@ class GameController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $endpoint = "https://api-v3.igdb.com/games";
+        $game = Http::withHeaders(config('services.igdb'))->withOptions([
+                'body' => "
+                    fields rating,screenshots.*, name,videos.*, cover.*, first_release_date, popularity, platforms.abbreviation ,slug, involved_companies.company.*, genres.*, similar_games.*, similar_games.cover.*,summary;
+                    where slug = \"{$slug}\";
+                "
+            ])->get($endpoint)->json();
+
+        abort_if(!$game, 404);
+
+        return view('show', [
+            'game' => $game[0]
+        ]);
     }
 
     /**

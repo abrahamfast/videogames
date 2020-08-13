@@ -4,18 +4,26 @@
 	<div class="container mx-auto px-4">
 		<div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
 			<div class="flex-none">
-				<img src="/img/gg1.jpg" alt="cover" class="">
+				<img src="{{ Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']) }}" alt="cover" class="">
 			</div>
 			<div class="lg:ml-12 lg:mr-64">
 				<h2 class="font-semibold text-4xl leading-tight mt-1">
-					Final Fantesy
+					{{ $game['name'] }}
 				</h2>
 				<div class="text-gray-400">
-					<span>Adventure, RPG</span>
+					<span>
+						@foreach($game['genres'] as $genre)
+							{{ $genre['name'] }},
+						@endforeach
+					</span>
 					&middot;
-					<span>Square, Enix</span>
+					<span>{{ $game['involved_companies'][0]['company']['name'] }}</span>
 					&middot;
-					<span>Playstation 4</span>
+					@foreach($game['platforms'] as $platform)
+				@if(array_key_exists('abbreviation', $platform))
+					{{ $platform['abbreviation'] }}
+				@endif
+			@endforeach
 				</div>
 				<div class="flex flex-wrap items-center mt-8">
 					<div class="flex items-center">

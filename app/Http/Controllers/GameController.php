@@ -49,15 +49,17 @@ class GameController extends Controller
         $endpoint = "https://api-v3.igdb.com/games";
          $game = Http::withHeaders(config('services.igdb'))->withOptions([
                 'body' => "
-                    fields name, cover.*, first_release_date, popularity,platforms.abbreviation,rating, slug;
+                    fields *, name, cover.*, first_release_date, popularity,platforms.abbreviation,rating, slug, involved_companies.company.*, genres.*;
                     where slug = \"{$slug}\";
                 "
             ])->get($endpoint)->json();
 
         abort_if(!$game, 404);
 
+        dump($game);
+
         return view('show', [
-            'game' => $game
+            'game' => $game[0]
         ]);
     }
 
